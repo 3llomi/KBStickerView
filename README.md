@@ -45,6 +45,15 @@ let stickerCategories: [StickerCategory] = [
     
     kbstickerView.stickerProvider = stickerProvider
     
+    //to enable it, set it as an Input View
+    textView.inputView = kbstickerView
+    
+    /*
+    to revert back to normal keyboard
+    textView.inputView = nil
+    textView.reloadInputViews()
+    */
+    
 ```
 
 You are responsible for loading stickers images and Sticker Categories images, you can do that by conforming to Protocols

@@ -8,35 +8,27 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KBStickerView'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of KBStickerView.'
+  s.version          = '0.1.1'
+  s.summary          = 'A view that shows Stickers as an InputView (Keyboard).'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This view will show Stickers at the bottom as an InputView (Keyboard).
+you can add your own stickers using a Remote URL, or just as a local asset file.
                        DESC
 
   s.homepage         = 'https://github.com/3llomi/KBStickerView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '3llomi' => 'allomi.raj@gmail.com' }
+  s.author           = { '3llomi' => 'contact@devlomi.com' }
   s.source           = { :git => 'https://github.com/3llomi/KBStickerView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+   s.social_media_url = 'https://twitter.com/3llomi'
 
   s.ios.deployment_target = '9.0'
+  s.swift_version = '5.0'
 
-  s.source_files = 'KBStickerView/Classes/**/*'
+  s.source_files = 'Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'KBStickerView' => ['KBStickerView/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

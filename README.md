@@ -30,7 +30,7 @@ pod 'KBStickerView'
 
 ```swift
 let kbstickerView = KBStickerView()
-view.addSubview(kbstickerView)
+kbstickerView.translatesAutoresizingMaskIntoConstraints = false
 
 let sitckerPack1: [Sticker] = [
     Sticker(data: "ic_recent", resourceType: .assets),
